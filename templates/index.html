@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maleria outbreak Prediction</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <center>
+    <h1>🦟Maleria outbreak prediction🦟</h1>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="mint">Minimum temp</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="mint" name="mint" placeholder="Enter the minimum temperature">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="maxt">Maximum temp</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="maxt" name="maxt" placeholder="Enter the maximum temperature">
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hum">Avg humidity</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="hum" name="hum" placeholder="Enter the average humidity">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rain">Rainfall</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="rain" name="rain" placeholder="Enter the rainfall in cm">
+            </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Predict" id="submit">
+                </td>
+            </tr>
+        </table>
+        <p>Prediction : {{pred}}</p>
+    </form>
+    </center>
+</body>
+</html>
